@@ -5,7 +5,7 @@ public class Person {
     private TelephoneNumber officeTelephoneNumber;
 
     public String officeAreaCode() {
-        return this.officeTelephoneNumber.areaCode();
+        return this.officeTelephoneNumber.areaCod();
     }
 
     public void officeAreaCode(String areaCode) {
