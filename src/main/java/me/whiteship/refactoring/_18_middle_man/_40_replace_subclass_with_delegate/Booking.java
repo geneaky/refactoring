@@ -20,7 +20,7 @@ public class Booking {
         return new Booking(show, time);
     }
     public static Booking createPremiumBooking(Show show, LocalDateTime time, PremiumExtra extra) {
-        PremiumBooking booking = new PremiumBooking(show, time, extra);
+        Booking booking = Booking.createBook(show, time);
         booking.premiumDelegate = new PremiumDelegate(booking, extra);
         return booking;
     }

@@ -59,6 +59,8 @@ class BookingTest {
 
         assertTrue(Booking.createPremiumBooking(lionKing, weekday, premiumExtra).hasDinner());
         assertFalse(Booking.createPremiumBooking(lionKing, weekend, premiumExtra).hasDinner());
+        assertFalse(Booking.createBook(lionKing, weekday).hasDinner());
+        assertFalse(Booking.createBook(lionKing, weekend).hasDinner());
     }
 
 }
